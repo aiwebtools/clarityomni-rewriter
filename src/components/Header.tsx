@@ -25,11 +25,11 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'py-3 bg-cyber-darker/80 backdrop-blur-lg shadow-lg' 
-          : 'py-5 bg-transparent'
+          ? 'py-3 bg-cyber-darker/95 backdrop-blur-lg shadow-lg' 
+          : 'py-5 bg-cyber-darker/80 backdrop-blur-md'
       }`}
     >
-      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 flex items-center justify-between relative">
         <Logo size={isScrolled ? 'sm' : 'md'} />
         
         {/* Desktop Navigation */}
@@ -73,7 +73,7 @@ const Header = () => {
       
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-cyber-darker/95 backdrop-blur-lg shadow-lg py-4 px-4 space-y-4 border-t border-white/10 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-cyber-darker/95 backdrop-blur-lg shadow-lg py-4 px-4 space-y-4 border-t border-white/10 animate-fade-in z-50">
           <a 
             href="#how-it-works" 
             className="block text-gray-300 hover:text-cyber-purple transition-colors py-2"

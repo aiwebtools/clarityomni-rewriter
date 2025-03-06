@@ -21,10 +21,12 @@ const Logo = ({ size = 'md', showSubtitle = true }: LogoProps) => {
   };
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center relative z-50">
       <div className="relative mr-2">
         <div className="absolute inset-0 bg-gradient-to-r from-cyber-purple to-cyber-blue rounded-full animate-pulse-glow blur-md opacity-70"></div>
-        <Sparkles className="relative z-10 text-white" size={size === 'sm' ? 24 : size === 'md' ? 32 : 40} />
+        <div className="relative bg-cyber-darker/40 rounded-full p-1.5">
+          <Sparkles className="relative z-10 text-white" size={size === 'sm' ? 24 : size === 'md' ? 32 : 40} />
+        </div>
       </div>
       <div className="flex flex-col items-start">
         <div className={`font-bold ${sizeClasses[size]} text-gradient animate-neon-glow tracking-wider`}>

@@ -26,7 +26,7 @@ const HeroSection = () => {
   }, []);
   
   return (
-    <section className="relative min-h-screen pt-20 pb-16 overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-screen pt-28 pb-16 overflow-hidden flex items-center justify-center">
       {/* Background gradient and effects */}
       <div className="absolute inset-0 bg-cyber-darker z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(155,135,245,0.15)_0%,_transparent_70%)]"></div>
@@ -39,7 +39,7 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20">
         {/* Text content */}
-        <div className="lg:w-1/2 text-center lg:text-left">
+        <div className="lg:w-1/2 text-center lg:text-left z-20">
           <div className="inline-flex items-center px-2.5 py-1 mb-4 rounded-full bg-cyber-purple/10 border border-cyber-purple/20">
             <Sparkle className="text-cyber-purple mr-2" size={16} />
             <span className="text-xs text-white">Next-Gen AI Text Clarifier</span>
@@ -72,7 +72,7 @@ const HeroSection = () => {
         </div>
         
         {/* 3D Orbit Animation */}
-        <div className="lg:w-1/2 perspective-container">
+        <div className="lg:w-1/2 perspective-container mt-20 lg:mt-0 z-10 relative">
           <div 
             ref={orbitRef}
             className="relative w-full max-w-md mx-auto rotate-3d"
