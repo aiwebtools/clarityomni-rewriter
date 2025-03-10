@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, CheckCircle } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
+import GlowingButton from './GlowingButton';
 
 const DisclaimerPopup = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -66,9 +67,22 @@ const DisclaimerPopup = () => {
                   <Shield className="w-8 h-8 text-cyber-purple" />
                 </div>
                 
-                <h2 className="text-2xl font-bold text-center mt-6 mb-4 text-gradient">
-                  DISCLAIMER
-                </h2>
+                <div className="flex justify-between items-center mt-6 mb-4">
+                  <h2 className="text-2xl font-bold text-gradient">
+                    DISCLAIMER
+                  </h2>
+                  
+                  <button
+                    onClick={handleAgree}
+                    className="group relative overflow-hidden"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-cyber-purple via-cyber-blue to-cyber-magenta opacity-70 group-hover:opacity-90 animate-shimmer bg-[length:200%_100%] rounded-lg"></div>
+                    <div className="relative bg-cyber-darker/40 backdrop-blur-sm flex items-center justify-center py-2 px-3 rounded-lg border border-white/10 group-hover:border-white/20 transition-colors">
+                      <CheckCircle className="w-4 h-4 mr-2 text-cyber-green group-hover:animate-pulse" />
+                      <span className="font-bold text-white group-hover:text-glow tracking-wider text-sm">I AGREE</span>
+                    </div>
+                  </button>
+                </div>
                 
                 <div className="space-y-4 text-sm text-gray-300">
                   <p>
@@ -83,17 +97,6 @@ const DisclaimerPopup = () => {
                     <li>You agree to our <a href="https://aiwebtools.ai/terms-of-services" className="text-cyber-purple hover:underline">Terms of Service</a> and <a href="https://openai.com/policies/privacy-policy" className="text-cyber-purple hover:underline">Privacy Policy</a>.</li>
                   </ul>
                 </div>
-                
-                <button
-                  onClick={handleAgree}
-                  className="group relative w-full mt-6 overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-cyber-purple via-cyber-blue to-cyber-magenta opacity-70 group-hover:opacity-90 animate-shimmer bg-[length:200%_100%] rounded-lg"></div>
-                  <div className="relative bg-cyber-darker/40 backdrop-blur-sm flex items-center justify-center py-3 px-4 rounded-lg border border-white/10 group-hover:border-white/20 transition-colors">
-                    <CheckCircle className="w-5 h-5 mr-2 text-cyber-green group-hover:animate-pulse" />
-                    <span className="font-bold text-white group-hover:text-glow tracking-wider">I AGREE</span>
-                  </div>
-                </button>
               </div>
             </div>
           </motion.div>
