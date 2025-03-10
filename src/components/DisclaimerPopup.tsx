@@ -55,20 +55,20 @@ const DisclaimerPopup = () => {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
             transition={{ type: "spring", damping: 15 }}
-            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-[90%] max-w-md"
+            className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-[90%] max-w-md max-h-[85vh] overflow-auto"
           >
             <div className="relative neo-blur rounded-xl overflow-hidden">
               {/* Glowing border effect */}
               <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-cyber-purple/50 via-cyber-blue/30 to-cyber-magenta/50 opacity-50 animate-pulse-glow"></div>
               
               {/* Content */}
-              <div className="relative p-6 glass-card rounded-xl">
+              <div className="relative p-4 sm:p-6 glass-card rounded-xl">
                 <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-cyber-darker p-3 rounded-full border border-cyber-purple/50">
                   <Shield className="w-8 h-8 text-cyber-purple" />
                 </div>
                 
                 <div className="flex justify-between items-center mt-6 mb-4">
-                  <h2 className="text-2xl font-bold text-gradient">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gradient">
                     DISCLAIMER
                   </h2>
                   
@@ -77,19 +77,19 @@ const DisclaimerPopup = () => {
                     className="group relative overflow-hidden"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-cyber-purple via-cyber-blue to-cyber-magenta opacity-70 group-hover:opacity-90 animate-shimmer bg-[length:200%_100%] rounded-lg"></div>
-                    <div className="relative bg-cyber-darker/40 backdrop-blur-sm flex items-center justify-center py-2 px-3 rounded-lg border border-white/10 group-hover:border-white/20 transition-colors">
-                      <CheckCircle className="w-4 h-4 mr-2 text-cyber-green group-hover:animate-pulse" />
-                      <span className="font-bold text-white group-hover:text-glow tracking-wider text-sm">I AGREE</span>
+                    <div className="relative bg-cyber-darker/40 backdrop-blur-sm flex items-center justify-center py-1.5 sm:py-2 px-2 sm:px-3 rounded-lg border border-white/10 group-hover:border-white/20 transition-colors">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2 text-cyber-green group-hover:animate-pulse" />
+                      <span className="font-bold text-white group-hover:text-glow tracking-wider text-xs sm:text-sm">I AGREE</span>
                     </div>
                   </button>
                 </div>
                 
-                <div className="space-y-4 text-sm text-gray-300">
+                <div className="space-y-3 text-xs sm:text-sm text-gray-300 overflow-y-auto max-h-[50vh]">
                   <p>
                     By using Clarity Omni GPT, you acknowledge and agree that:
                   </p>
                   
-                  <ul className="list-disc pl-5 space-y-2">
+                  <ul className="list-disc pl-5 space-y-1.5 sm:space-y-2">
                     <li>This tool aims to rewrite text for clarity without changing context or omitting information.</li>
                     <li>We cannot guarantee 100% accuracy in all cases or for all types of content.</li>
                     <li>You are responsible for reviewing all output for accuracy and appropriateness.</li>
