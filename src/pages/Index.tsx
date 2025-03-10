@@ -8,6 +8,7 @@ import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Disclaimer from '@/components/Disclaimer';
 import Footer from '@/components/Footer';
+import DisclaimerPopup from '@/components/DisclaimerPopup';
 
 const Index = () => {
   // Smooth scroll handling for anchor links
@@ -42,6 +43,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-cyber-dark">
       <Header />
+      <DisclaimerPopup />
       <main>
         <HeroSection />
         <HowItWorks />
