@@ -42,16 +42,20 @@ const HeroSection = () => {
         <div className="lg:w-1/2 text-center lg:text-left z-20">
           <div className="inline-flex items-center px-2.5 py-1 mb-4 rounded-full bg-cyber-purple/10 border border-cyber-purple/20">
             <Sparkle className="text-cyber-purple mr-2" size={16} />
-            <span className="text-xs text-white">Next-Gen AI Text Clarifier</span>
+            <span className="text-xs text-white">Free AI Tools by AIWEBTOOLS.AI</span>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-            Rewrite With <span className="text-gradient">Perfect Clarity</span>
+            Free AI Tools: Rewrite With <span className="text-gradient">Perfect Clarity</span>
           </h1>
           
-          <p className="text-lg text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
-            Clarity Omni GPT rewrites your text with perfect clarity, preserving every detail and context while making it easier to understand.
+          <p className="text-lg text-gray-300 mb-6 max-w-xl mx-auto lg:mx-0">
+            Discover powerful free AI tools at <strong className="text-cyber-purple">AIWEBTOOLS.AI</strong>. Our Clarity Omni GPT rewrites your text with perfect clarity, preserving every detail and context while making it easier to understand.
           </p>
+          
+          <div className="text-sm text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0">
+            <p>✨ <strong>Perfect for:</strong> Content creators, students, professionals, writers, researchers, and anyone who needs crystal-clear communication</p>
+          </div>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
             <GlowingButton
@@ -61,13 +65,20 @@ const HeroSection = () => {
               color="purple"
               size="lg"
             >
-              Try Clarity Omni Now
+              Try Free AI Tool Now
             </GlowingButton>
             
             <a href="#how-it-works" className="flex items-center text-white hover:text-cyber-purple transition-colors">
-              <span>How it works</span>
+              <span>Explore More AI Tools</span>
               <ArrowRight size={16} className="ml-2" />
             </a>
+          </div>
+          
+          {/* SEO-friendly keyword-rich content */}
+          <div className="mt-8 text-xs text-gray-500 max-w-xl mx-auto lg:mx-0">
+            <p>
+              <strong>AI Web Tools</strong> | <strong>Free AI Tools</strong> | <strong>Text Clarifier</strong> | <strong>Writing Assistant</strong> | <strong>Content Optimization</strong>
+            </p>
           </div>
         </div>
         

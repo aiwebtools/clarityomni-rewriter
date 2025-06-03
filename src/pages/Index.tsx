@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
+import SEOContent from '@/components/SEOContent';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Disclaimer from '@/components/Disclaimer';
@@ -46,6 +47,7 @@ const Index = () => {
         <HeroSection />
         <HowItWorks />
         <Features />
+        <SEOContent />
         <Testimonials />
         <FAQ />
         <Disclaimer />
