@@ -34,7 +34,7 @@ const Footer = () => {
               <li><a href="#disclaimer" className="text-gray-400 hover:text-cyber-purple transition-colors">Disclaimer</a></li>
               <li>
                 <a 
-                  href="https://www.aiwebtools.ai" 
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-purple transition-colors flex items-center"
@@ -84,7 +84,7 @@ const Footer = () => {
               USE CLARITY OMNI
             </GlowingButton>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-full block text-center px-6 py-3 rounded-lg border border-cyber-purple/50 text-cyber-purple hover:bg-cyber-purple/10 transition-colors duration-300"
@@ -98,7 +98,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0 text-center md:text-left">
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-cyber-purple transition-colors"
@@ -117,7 +117,7 @@ const Footer = () => {
               Privacy Policy
             </a>
             <a 
-              href="https://aiwebtools.ai/terms-of-services" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-cyber-purple transition-colors text-sm"
@@ -130,7 +130,7 @@ const Footer = () => {
         {/* Oval button */}
         <div className="fixed bottom-6 right-6 z-50">
           <a 
-            href="https://www.aiwebtools.ai" 
+            href="https://aiwebtools.lovable.app/?via=aiwebtools" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center px-6 py-3 bg-gradient-to-r from-cyber-purple to-cyber-blue rounded-full text-white shadow-lg hover:shadow-xl transition-shadow duration-300"
