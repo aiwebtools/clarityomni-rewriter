@@ -84,7 +84,7 @@ const Footer = () => {
               USE CLARITY OMNI
             </GlowingButton>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-full block text-center px-6 py-3 rounded-lg border border-cyber-purple/50 text-cyber-purple hover:bg-cyber-purple/10 transition-colors duration-300"
